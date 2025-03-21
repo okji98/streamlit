@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score, classification_report
 plt.rcParams["font.family"] = "Malgun Gothic"
 plt.rcParams["axes.unicode_minus"] = False
 
-# 탭 분류
+# 탭 분
 analyze, risk = st.tabs(["위험도 분석 데이터", "위험도 진단하기"])
 ### 첫번째 탭 ###
 # 각 컬럼마다의 상관관계 분석
