@@ -110,7 +110,7 @@ with risk:
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     # XGBoost 모델 생성
     model = xgb.XGBClassifier(
-        n_estimators=100,
+        n_estimators=8000,
         learning_rate=0.1,
         max_depth=3,
         objective='multi:softmax',
@@ -125,7 +125,7 @@ with risk:
     print(f"모델 정확도: {accuracy:.2f}")
     print(classification_report(y_test, y_pred, target_names=['Low Risk', 'Mid Risk', 'High Risk']))
 
-    st.title("산모 건강 위험도 예측 시스템 🚑")
+    st.title("산모 건강 위험도 예측 시스템")
 
     # 모델 성능 평가
     st.subheader("모델 성능 평가")
